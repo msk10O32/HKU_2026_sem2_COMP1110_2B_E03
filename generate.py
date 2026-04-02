@@ -3,6 +3,7 @@
 
 import random
 import csv
+from datetime import datetime,timedelta
 
 #以下是可以自定义配比的参数
 Total_groups = 100 #总顾客组数
@@ -11,6 +12,7 @@ Group_size_range = (1,6) #团体人数范围（目前预设的是1-6人）
 Dining_duration_range = (20,60) #用餐时间范围（目前预设的是20-60分钟）
 Vip_ratio = 0.1 #Vip顾客比例（目前预设的是10%）
 Random_seed = 325 #随机种子，固定之后可以复现相同数据，方便进行对比试验
+BASE_TIME = datetime(2024,6,1,0,0,0) #基础时间 2024-06-01 00.00.00
 
 def main():
     random.seed(Random_seed)
@@ -19,9 +21,11 @@ def main():
     customer_data = []
     for i in range(Total_groups):
         group_size = random.randint(*Group_size_range)
-        arrival_time = random.randint(*Arrival_time_range)
+        arrival_min = random.randint(*Arrival_time_range)
         dining_duration = random.randint(*Dining_duration_range)
         is_vip = random.random() < Vip_ratio #按预设好的比例生成vip
+
+        arrival_time = (BASE_TIME + timedelta(minutes=arrival_min)).strftime("%Y-%m-%d %H:%M:%S")
 
         customer_data.append({
             "group_size": group_size,
