@@ -7,7 +7,7 @@ from datetime import datetime,timedelta
 
 #以下是可以自定义配比的参数
 Total_groups = 100 #总顾客组数
-Arrival_time_range = (0,100) #顾客到达时间按的范围（单位：分钟，0=模拟开始时间，120=2小时高峰）
+created_at_range = (0,100) #顾客到达时间按的范围（单位：分钟，0=模拟开始时间，120=2小时高峰）
 Group_size_range = (1,6) #团体人数范围（目前预设的是1-6人）
 Dining_duration_range = (20,60) #用餐时间范围（目前预设的是20-60分钟）
 Vip_ratio = 0.1 #Vip顾客比例（目前预设的是10%）
@@ -21,27 +21,27 @@ def main():
     customer_data = []
     for i in range(Total_groups):
         group_size = random.randint(*Group_size_range)
-        arrival_min = random.randint(*Arrival_time_range)
+        arrival_min = random.randint(*created_at_range)
         dining_duration = random.randint(*Dining_duration_range)
         is_vip = random.random() < Vip_ratio #按预设好的比例生成vip
 
-        arrival_time = (BASE_TIME + timedelta(minutes=arrival_min)).strftime("%Y-%m-%d %H:%M:%S")
+        created_at = (BASE_TIME + timedelta(minutes=arrival_min)).strftime("%Y-%m-%d %H:%M:%S")
 
         customer_data.append({
             "group_size": group_size,
-            "arrival_time": arrival_time,
+            "created_at": created_at,
             "dining_duration": dining_duration,
             "is_vip": 1 if is_vip else 0
         })
 
         #按照时间排序，保证顾客按到底按顺序配列
-    customer_data.sort(key=lambda x: x["arrival_time"])
+    customer_data.sort(key=lambda x: x["created_at"])
 
         #写入 input.csv 文件
-    output_file = "input.csv"
+    output_file = "data\\input.csv"
     with open(output_file,"w",newline="",encoding="utf-8") as f:
         #设置表格列名
-        writer = csv.DictWriter(f, fieldnames=["group_size", "arrival_time", "dining_duration", "is_vip"])
+        writer = csv.DictWriter(f, fieldnames=["group_size", "created_at", "dining_duration", "is_vip"])
         writer.writeheader()
         writer.writerows(customer_data)
 
