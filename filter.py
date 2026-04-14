@@ -45,7 +45,7 @@ def is_valid_input(row):
 def main():
     print("Initializing the filter module...")
     #initialize the csv file with the granularity levels
-    with open('data\\granularity.csv', 'r') as file:
+    with open('config\\granularity.csv', 'r') as file:
         reader = csv.DictReader(file)
         granularity_levels = []
         #remove duplicate split_point points and check for invalid values, then sort the granularity levels based on the split_point points

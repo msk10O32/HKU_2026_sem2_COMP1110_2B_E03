@@ -1,0 +1,229 @@
+Processing request R001, arrived at 0 minutes
+Processing request R002, arrived at 0 minutes
+Processing request R003, arrived at 4 minutes
+Request R001 type: A is served at time 0 minutes, waiting customers in queue: 0
+Request R002 type: A is served at time 0 minutes, waiting customers in queue: 0
+Processing request R004, arrived at 5 minutes
+Request R003 type: B is served at time 4 minutes, waiting customers in queue: 0
+Processing request R005, arrived at 6 minutes
+Request R004 type: C is served at time 5 minutes, waiting customers in queue: 0
+Processing request R006, arrived at 6 minutes
+Processing request R007, arrived at 7 minutes
+Request R005 type: B is served at time 6 minutes, waiting customers in queue: 0
+Processing request R008, arrived at 9 minutes
+Request R007 is rejected due to full queue at time 7 minutes, customers limit: 1
+Processing request R009, arrived at 10 minutes
+Request R008 is rejected due to full queue at time 9 minutes, customers limit: 1
+Processing request R010, arrived at 11 minutes
+Request R009 type: B is served at time 10 minutes, waiting customers in queue: 0
+Processing request R011, arrived at 13 minutes
+Processing request R012, arrived at 13 minutes
+Processing request R013, arrived at 14 minutes
+Request R012 is rejected due to full queue at time 13 minutes, customers limit: 1
+Request R011 type: A is served at time 13 minutes, waiting customers in queue: 0
+Processing request R014, arrived at 14 minutes
+Request R013 is rejected due to full queue at time 14 minutes, customers limit: 1
+Processing request R015, arrived at 15 minutes
+Request R014 is rejected due to full queue at time 14 minutes, customers limit: 1
+Processing request R016, arrived at 15 minutes
+Request R015 is rejected due to full queue at time 15 minutes, customers limit: 1
+Processing request R017, arrived at 16 minutes
+Request R016 is rejected due to full queue at time 15 minutes, customers limit: 1
+Processing request R018, arrived at 18 minutes
+Request R017 type: A is served at time 16 minutes, waiting customers in queue: 0
+Processing request R019, arrived at 19 minutes
+Request R018 type: A is served at time 18 minutes, waiting customers in queue: 0
+Processing request R020, arrived at 20 minutes
+Processing request R021, arrived at 23 minutes
+Processing request R022, arrived at 26 minutes
+Request R021 is rejected due to full queue at time 23 minutes, customers limit: 1
+Processing request R023, arrived at 26 minutes
+Request R022 is rejected due to full queue at time 26 minutes, customers limit: 1
+Processing request R024, arrived at 27 minutes
+Request R023 is rejected due to full queue at time 26 minutes, customers limit: 2
+Processing request R025, arrived at 28 minutes
+Request R024 is rejected due to full queue at time 27 minutes, customers limit: 1
+Processing request R026, arrived at 28 minutes
+Request R025 is rejected due to full queue at time 28 minutes, customers limit: 1
+Processing request R027, arrived at 28 minutes
+Request R026 is rejected due to full queue at time 28 minutes, customers limit: 2
+Processing request R028, arrived at 29 minutes
+Request R027 is rejected due to full queue at time 28 minutes, customers limit: 1
+Processing request R029, arrived at 29 minutes
+Request R028 is rejected due to full queue at time 29 minutes, customers limit: 2
+Processing request R030, arrived at 31 minutes
+Request R029 is rejected due to full queue at time 29 minutes, customers limit: 2
+Request R004 type: C is completed at time 31 minutes
+Processing request R031, arrived at 31 minutes
+Request R030 is rejected due to full queue at time 31 minutes, customers limit: 1
+Processing request R032, arrived at 32 minutes
+Request R006 type: C is served at time 31 minutes, waiting customers in queue: 1
+Processing request R033, arrived at 33 minutes
+Request R032 is rejected due to full queue at time 32 minutes, customers limit: 1
+Processing request R034, arrived at 33 minutes
+Request R033 is rejected due to full queue at time 33 minutes, customers limit: 1
+Processing request R035, arrived at 33 minutes
+Request R034 is rejected due to full queue at time 33 minutes, customers limit: 1
+Processing request R036, arrived at 37 minutes
+Request R035 is rejected due to full queue at time 33 minutes, customers limit: 2
+Processing request R037, arrived at 39 minutes
+Request R036 is rejected due to full queue at time 37 minutes, customers limit: 1
+Request R005 type: B is completed at time 38 minutes
+Request R010 type: B is served at time 38 minutes, waiting customers in queue: 0
+Request R003 type: B is completed at time 39 minutes
+Processing request R038, arrived at 40 minutes
+Request R037 is rejected due to full queue at time 39 minutes, customers limit: 2
+Processing request R039, arrived at 40 minutes
+Processing request R040, arrived at 41 minutes
+Request R038 type: B is served at time 40 minutes, waiting customers in queue: 1
+Request R011 type: A is completed at time 41 minutes
+Processing request R041, arrived at 41 minutes
+Request R040 is rejected due to full queue at time 41 minutes, customers limit: 1
+Processing request R042, arrived at 41 minutes
+Request R020 type: A is served at time 41 minutes, waiting customers in queue: 2
+Processing request R043, arrived at 43 minutes
+Request R042 is rejected due to full queue at time 41 minutes, customers limit: 2
+Processing request R044, arrived at 43 minutes
+Request R043 is rejected due to full queue at time 43 minutes, customers limit: 1
+Processing request R045, arrived at 43 minutes
+Request R044 is rejected due to full queue at time 43 minutes, customers limit: 1
+Processing request R046, arrived at 44 minutes
+Request R045 is rejected due to full queue at time 43 minutes, customers limit: 1
+Processing request R047, arrived at 44 minutes
+Request R046 is rejected due to full queue at time 44 minutes, customers limit: 1
+Processing request R048, arrived at 45 minutes
+Request R047 is rejected due to full queue at time 44 minutes, customers limit: 1
+Processing request R049, arrived at 46 minutes
+Request R048 is rejected due to full queue at time 45 minutes, customers limit: 1
+Processing request R050, arrived at 47 minutes
+Request R049 is rejected due to full queue at time 46 minutes, customers limit: 2
+Request R009 type: B is completed at time 47 minutes
+Processing request R051, arrived at 48 minutes
+Request R050 is rejected due to full queue at time 47 minutes, customers limit: 2
+Request R039 type: B is served at time 47 minutes, waiting customers in queue: 0
+Request R017 type: A is completed at time 48 minutes
+Processing request R052, arrived at 50 minutes
+Request R051 is rejected due to full queue at time 48 minutes, customers limit: 1
+Request R019 type: A is served at time 48 minutes, waiting customers in queue: 1
+Processing request R053, arrived at 50 minutes
+Processing request R054, arrived at 52 minutes
+Request R053 is rejected due to full queue at time 50 minutes, customers limit: 1
+Request R002 type: A is completed at time 51 minutes
+Request R041 type: A is served at time 51 minutes, waiting customers in queue: 1
+Processing request R055, arrived at 53 minutes
+Request R054 is rejected due to full queue at time 52 minutes, customers limit: 1
+Processing request R056, arrived at 53 minutes
+Processing request R057, arrived at 56 minutes
+Request R056 is rejected due to full queue at time 53 minutes, customers limit: 1
+Request R001 type: A is completed at time 56 minutes
+Processing request R058, arrived at 56 minutes
+Processing request R059, arrived at 59 minutes
+Request R058 is rejected due to full queue at time 56 minutes, customers limit: 1
+Request R052 type: A is served at time 56 minutes, waiting customers in queue: 1
+Request R006 type: C is completed at time 57 minutes
+Request R031 type: C is served at time 57 minutes, waiting customers in queue: 0
+Processing request R060, arrived at 59 minutes
+Request R059 is rejected due to full queue at time 59 minutes, customers limit: 1
+Processing request R061, arrived at 60 minutes
+Request R060 is rejected due to full queue at time 59 minutes, customers limit: 1
+Processing request R062, arrived at 61 minutes
+Processing request R063, arrived at 61 minutes
+Request R062 is rejected due to full queue at time 61 minutes, customers limit: 1
+Processing request R064, arrived at 62 minutes
+Processing request R065, arrived at 62 minutes
+Request R064 is rejected due to full queue at time 62 minutes, customers limit: 1
+Processing request R066, arrived at 62 minutes
+Request R065 is rejected due to full queue at time 62 minutes, customers limit: 1
+Processing request R067, arrived at 63 minutes
+Request R066 is rejected due to full queue at time 62 minutes, customers limit: 2
+Processing request R068, arrived at 63 minutes
+Request R067 is rejected due to full queue at time 63 minutes, customers limit: 1
+Processing request R069, arrived at 66 minutes
+Request R068 is rejected due to full queue at time 63 minutes, customers limit: 1
+Processing request R070, arrived at 66 minutes
+Request R069 is rejected due to full queue at time 66 minutes, customers limit: 2
+Processing request R071, arrived at 66 minutes
+Request R070 is rejected due to full queue at time 66 minutes, customers limit: 1
+Processing request R072, arrived at 67 minutes
+Request R071 is rejected due to full queue at time 66 minutes, customers limit: 2
+Processing request R073, arrived at 67 minutes
+Request R072 is rejected due to full queue at time 67 minutes, customers limit: 1
+Processing request R074, arrived at 68 minutes
+Request R073 is rejected due to full queue at time 67 minutes, customers limit: 2
+Request R018 type: A is completed at time 68 minutes
+Processing request R075, arrived at 69 minutes
+Request R074 is rejected due to full queue at time 68 minutes, customers limit: 1
+Request R061 type: A is served at time 68 minutes, waiting customers in queue: 1
+Request R020 type: A is completed at time 69 minutes
+Processing request R076, arrived at 70 minutes
+Request R075 is rejected due to full queue at time 69 minutes, customers limit: 1
+Request R057 type: A is served at time 69 minutes, waiting customers in queue: 0
+Processing request R077, arrived at 70 minutes
+Processing request R078, arrived at 73 minutes
+Request R077 is rejected due to full queue at time 70 minutes, customers limit: 1
+Request R038 type: B is completed at time 72 minutes
+Request R055 type: B is served at time 72 minutes, waiting customers in queue: 0
+Processing request R079, arrived at 75 minutes
+Processing request R080, arrived at 76 minutes
+Request R079 is rejected due to full queue at time 75 minutes, customers limit: 1
+Processing request R081, arrived at 77 minutes
+Processing request R082, arrived at 77 minutes
+Request R081 is rejected due to full queue at time 77 minutes, customers limit: 1
+Processing request R083, arrived at 81 minutes
+Request R082 is rejected due to full queue at time 77 minutes, customers limit: 2
+Processing request R084, arrived at 82 minutes
+Request R083 is rejected due to full queue at time 81 minutes, customers limit: 1
+Processing request R085, arrived at 83 minutes
+Request R084 is rejected due to full queue at time 82 minutes, customers limit: 2
+Request R010 type: B is completed at time 83 minutes
+Processing request R086, arrived at 83 minutes
+Request R085 is rejected due to full queue at time 83 minutes, customers limit: 1
+Processing request R087, arrived at 84 minutes
+Request R080 type: B is served at time 83 minutes, waiting customers in queue: 1
+Request R019 type: A is completed at time 84 minutes
+Processing request R088, arrived at 85 minutes
+Request R087 is rejected due to full queue at time 84 minutes, customers limit: 1
+Request R076 type: A is served at time 84 minutes, waiting customers in queue: 1
+Processing request R089, arrived at 85 minutes
+Processing request R090, arrived at 87 minutes
+Request R089 is rejected due to full queue at time 85 minutes, customers limit: 1
+Processing request R091, arrived at 87 minutes
+Request R090 is rejected due to full queue at time 87 minutes, customers limit: 2
+Processing request R092, arrived at 88 minutes
+Request R091 is rejected due to full queue at time 87 minutes, customers limit: 1
+Processing request R093, arrived at 90 minutes
+Request R092 is rejected due to full queue at time 88 minutes, customers limit: 1
+Request R039 type: B is completed at time 89 minutes
+Request R086 type: B is served at time 89 minutes, waiting customers in queue: 0
+Processing request R094, arrived at 92 minutes
+Request R093 is rejected due to full queue at time 90 minutes, customers limit: 2
+Processing request R095, arrived at 92 minutes
+Request R094 is rejected due to full queue at time 92 minutes, customers limit: 1
+Processing request R096, arrived at 92 minutes
+Request R095 is rejected due to full queue at time 92 minutes, customers limit: 1
+Processing request R097, arrived at 94 minutes
+Request R096 is rejected due to full queue at time 92 minutes, customers limit: 1
+Request R061 type: A is completed at time 94 minutes
+Processing request R098, arrived at 97 minutes
+Request R097 is rejected due to full queue at time 94 minutes, customers limit: 2
+Request R088 type: A is served at time 94 minutes, waiting customers in queue: 1
+Request R031 type: C is completed at time 97 minutes
+Processing request R099, arrived at 98 minutes
+Request R063 type: C is served at time 97 minutes, waiting customers in queue: 0
+Request R055 type: B is completed at time 98 minutes
+Processing request R100, arrived at 98 minutes
+Request R100 is rejected due to full queue at time 98 minutes, customers limit: 1
+Request R098 type: B is served at time 98 minutes, waiting customers in queue: 0
+Request R052 type: A is completed at time 105 minutes
+Request R078 type: A is served at time 105 minutes, waiting customers in queue: 0
+Request R041 type: A is completed at time 106 minutes
+Request R088 type: A is completed at time 115 minutes
+Request R076 type: A is completed at time 117 minutes
+Request R057 type: A is completed at time 119 minutes
+Request R063 type: C is completed at time 121 minutes
+Request R099 type: C is served at time 121 minutes, waiting customers in queue: 0
+Request R086 type: B is completed at time 133 minutes
+Request R080 type: B is completed at time 135 minutes
+Request R098 type: B is completed at time 138 minutes
+Request R078 type: A is completed at time 152 minutes
+Request R099 type: C is completed at time 181 minutes

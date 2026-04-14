@@ -9,7 +9,7 @@ def load_request():
             request.append(row)
     return request
 def load_group():
-    with open("data\\granularity.csv","r") as file:
+    with open("config\\granularity.csv","r") as file:
         reader = csv.DictReader(file)
         group = []
         for row in reader:
@@ -25,17 +25,18 @@ class Restaurant:
         self.env = env
         self.requests = requests
         self.records = []
+        self.log = []
         self.standard_time = dt.datetime.strptime(self.requests[0]['arrival_time'], '%Y-%m-%d %H:%M:%S')
         self.end_time = 14400
     def run(self):
         self.env.process(self.process())
-        self.env.run(until=self.end_time)
+        self.env.run()
     def process(self):
         last = 0
         for request in self.requests:
             arrival_time = dt.datetime.strptime(request['arrival_time'], '%Y-%m-%d %H:%M:%S')
             start = int((arrival_time-self.standard_time).total_seconds()/60)
-            print(f"Processing request {request['uid']}, arrives at {start} minutes")
+            self.log.append(f"Processing request {request['uid']}, arrived at {start} minutes")
             yield self.env.timeout(start-last)
             self.env.process(self.handle_request(request))
             last = start
@@ -51,15 +52,15 @@ class Restaurant:
                 "leaving_time": None,
                 "is_served": False
             })
-            print(f"Request {request['uid']} is rejected due to full queue at time {self.env.now}")
+            self.log.append(f"Request {request['uid']} is rejected due to full queue at time {self.env.now} minutes, customers limit: {int(self.queue_sizes[request['table_type']])}")
             return
         with self.table_groups[request['table_type']].request(priority=-int(request['is_vip'])) as req:
             yield req
             seating_time = self.env.now
-            print(f"Request {request['uid']} type: {request['table_type']} is served at time {seating_time},waiting customers in queue: {len(self.table_groups[request['table_type']].queue)}")
+            self.log.append(f"Request {request['uid']} type: {request['table_type']} is served at time {seating_time} minutes, waiting customers in queue: {len(self.table_groups[request['table_type']].queue)}")
             yield self.env.timeout(int(request['dining_duration']))
             leaving_time = self.env.now
-            print(f"Request {request['uid']} type: {request['table_type']} is completed at time {leaving_time}")
+            self.log.append(f"Request {request['uid']} type: {request['table_type']} is completed at time {leaving_time} minutes")
             self.records.append({
                 "uid": request['uid'],
                 "group_size": request['group_size'],
@@ -82,5 +83,8 @@ def main():
         writer.writeheader()
         for record in R.records:
             writer.writerow(record)
+    with open('log\\simulation_log.txt','w') as file:
+        for log in R.log:
+            file.write(log+'\n')
 if __name__ == "__main__":
     main()
