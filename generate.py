@@ -25,23 +25,23 @@ def main():
         dining_duration = random.randint(*Dining_duration_range)
         is_vip = random.random() < Vip_ratio #Generate VIP according to the preset ratio
 
-        created_at = (BASE_TIME + timedelta(minutes=arrival_min)).strftime("%Y-%m-%d %H:%M:%S")
+        arrival_time = (BASE_TIME + timedelta(minutes=arrival_min)).strftime("%Y-%m-%d %H:%M:%S")
 
         customer_data.append({
             "group_size": group_size,
-            "created_at": created_at,
+            "arrival_time": arrival_time,
             "dining_duration": dining_duration,
             "is_vip": 1 if is_vip else 0
         })
 
         #按照时间排序，保证顾客按到底按顺序配列
-    customer_data.sort(key=lambda x: x["created_at"])
+    customer_data.sort(key=lambda x: x["arrival_time"])
 
         #写入 input.csv 文件
     output_file = "data\\input.csv"
     with open(output_file,"w",newline="",encoding="utf-8") as f:
         #设置表格列名
-        writer = csv.DictWriter(f, fieldnames=["group_size", "created_at", "dining_duration", "is_vip"])
+        writer = csv.DictWriter(f, fieldnames=["group_size", "arrival_time", "dining_duration", "is_vip"])
         writer.writeheader()
         writer.writerows(customer_data)
 
