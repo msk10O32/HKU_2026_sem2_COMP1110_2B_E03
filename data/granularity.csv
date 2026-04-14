@@ -1,4 +1,4 @@
-type,split_point,group_capacity,queue_capacity
-A,1,1,0
-B,3,1,0
-C,5,1,0
+type,split_point,table_capacity,queue_capacity
+A,1,5,2
+B,3,3,2
+C,5,1,2
