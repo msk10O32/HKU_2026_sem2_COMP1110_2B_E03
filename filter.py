@@ -1,5 +1,6 @@
 import csv
 import datetime as dt
+import simpy
 '''this file aims to read the input values from the input.csv file,
 filter the input values based on the defined rules, 
 determine the table type based on the granularity levels defined in the granularity.csv file, 
@@ -56,7 +57,7 @@ def main():
                 check_split.add(int(row['split']))
         granularity_levels.sort(key=lambda x: x[1])
     #convert input values to the request dicts
-    with open('input.csv', 'r') as file:
+    with open('data\\input.csv', 'r') as file:
         reader = csv.DictReader(file)
         output = []
         for row in reader:
