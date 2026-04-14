@@ -44,6 +44,7 @@ def is_valid_input(row):
     return True
 
 def main():
+    print("Initializing the filter module...")
     #initialize the csv file with the granularity levels
     with open('data\\granularity.csv', 'r') as file:
         reader = csv.DictReader(file)
@@ -90,5 +91,6 @@ def main():
                 i+=1
                 row['uid'] = 'R' + str(i).zfill(size)
                 writer.writerow(row)
+    print(f"Filtering is completed.\n{len(output)} groups of data are filtered and assigned with table types.")
 if __name__ == "__main__":
     main()
