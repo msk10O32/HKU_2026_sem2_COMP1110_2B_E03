@@ -1,6 +1,5 @@
 import csv
 import datetime as dt
-import simpy
 '''this file aims to read the input values from the input.csv file,
 filter the input values based on the defined rules, 
 determine the table type based on the granularity levels defined in the granularity.csv file, 
@@ -10,13 +9,13 @@ The output is printed as a list of dicts.
 #functionized error checking for the input values
 def is_valid_granularity(row):
     try:
-        pin = int(row['split'])
+        pin = int(row['split_point'])
     except:
-        raise TypeError(f"Invalid value for split: row: {row['type']}, {row['split']}")
+        raise TypeError(f"Invalid value for split_point: row: {row['type']}, {row['split_point']}")
     if pin in check_split:
-        raise ValueError(f"Split point {row['split']} is assigned to multiple table types: row: {row['type']}, {row['split']}")
+        raise ValueError(f"Split point {row['split_point']} is assigned to multiple table types: row: {row['type']}, {row['split_point']}")
     if pin <= 0:
-        raise ValueError(f"Split must be a positive integer: row: {row['type']}, {row['split']}")
+        raise ValueError(f"Split must be a positive integer: row: {row['type']}, {row['split_point']}")
     return True
 
 #check input values and assign the table type based on the granularity levels
@@ -49,13 +48,13 @@ def main():
     with open('data\\granularity.csv', 'r') as file:
         reader = csv.DictReader(file)
         granularity_levels = []
-        #remove duplicate split points and check for invalid values, then sort the granularity levels based on the split points
+        #remove duplicate split_point points and check for invalid values, then sort the granularity levels based on the split_point points
         global check_split
         check_split = set()
         for row in reader:
             if is_valid_granularity(row):
-                granularity_levels.append((row['type'], int(row['split'])))
-                check_split.add(int(row['split']))
+                granularity_levels.append((row['type'], int(row['split_point'])))
+                check_split.add(int(row['split_point']))
         granularity_levels.sort(key=lambda x: x[1])
     #convert input values to the request dicts
     with open('data\\input.csv', 'r') as file:
@@ -69,7 +68,7 @@ def main():
                 buffer['dining_duration'] = int(row['dining_duration'])
                 buffer['arrival_time'] = row['arrival_time']
                 buffer['is_vip'] = int(row['is_vip'])
-            #if the custom count is greater than or equal to the largest split, assign the largest table type
+            #if the custom count is greater than or equal to the largest split_point, assign the largest table type
             if int(row['group_size']) >= granularity_levels[-1][1]:
                 buffer['table_type'] = granularity_levels[-1][0]
             else:

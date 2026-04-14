@@ -1,4 +1,4 @@
-type,split,limit
-A,1,30
-B,3,10
-C,5,5
+type,split_point,group_capacity,queue_capacity
+A,1,1,0
+B,3,1,0
+C,5,1,0
