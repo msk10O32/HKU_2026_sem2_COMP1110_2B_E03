@@ -1,4 +1,4 @@
-type,split
-A,1
-B,3
-C,5
+type,split,limit
+A,1,30
+B,3,10
+C,5,5
