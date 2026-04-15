@@ -21,7 +21,10 @@ class Restaurant:
         self.table_groups = dict()
         for group in groups:
             self.table_groups[group["type"]] = simpy.PriorityResource(env, capacity=int(group["table_capacity"]))
-            self.queue_sizes[group["type"]] = float(group["queue_capacity"])
+            if group["queue_capacity"] == 'inf':
+                self.queue_sizes[group["type"]] = float('inf')
+            else:
+                self.queue_sizes[group["type"]] = int(group["queue_capacity"])
         self.env = env
         self.requests = requests
         self.records = []
@@ -36,8 +39,8 @@ class Restaurant:
         for request in self.requests:
             arrival_time = dt.datetime.strptime(request['arrival_time'], '%Y-%m-%d %H:%M:%S')
             start = int((arrival_time-self.standard_time).total_seconds()/60)
-            self.log.append(f"Processing request {request['uid']}, arrived at {start} minutes")
             yield self.env.timeout(start-last)
+            self.log.append(f"Processing request {request['uid']} type: {request['table_type']}, arrived at {start} minutes, waiting customers in queue: {len(self.table_groups[request['table_type']].queue)}/{self.queue_sizes[request['table_type']]}")
             self.env.process(self.handle_request(request))
             last = start
     def handle_request(self,request):
@@ -52,12 +55,12 @@ class Restaurant:
                 "leaving_time": None,
                 "is_served": False
             })
-            self.log.append(f"Request {request['uid']} is rejected due to full queue at time {self.env.now} minutes, customers limit: {int(self.queue_sizes[request['table_type']])}")
+            self.log.append(f"Request {request['uid']} type: {request['table_type']} is rejected due to full queue at time {self.env.now} minutes, customers limit: {self.queue_sizes[request['table_type']]}")
             return
         with self.table_groups[request['table_type']].request(priority=-int(request['is_vip'])) as req:
             yield req
             seating_time = self.env.now
-            self.log.append(f"Request {request['uid']} type: {request['table_type']} is served at time {seating_time} minutes, waiting customers in queue: {len(self.table_groups[request['table_type']].queue)}")
+            self.log.append(f"Request {request['uid']} type: {request['table_type']} is served at time {seating_time} minutes, waiting customers in queue: {len(self.table_groups[request['table_type']].queue)}/{self.queue_sizes[request['table_type']]}")
             yield self.env.timeout(int(request['dining_duration']))
             leaving_time = self.env.now
             self.log.append(f"Request {request['uid']} type: {request['table_type']} is completed at time {leaving_time} minutes")
