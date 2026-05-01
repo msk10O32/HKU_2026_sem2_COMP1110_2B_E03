@@ -5,14 +5,14 @@ import random
 import csv
 from datetime import datetime,timedelta
 
-#以下是可以自定义配比的参数
-Total_groups = 100 #总顾客组数
-created_at_range = (0,100) #顾客到达时间按的范围（单位：分钟，0=模拟开始时间，120=2小时高峰）
-Group_size_range = (1,6) #团体人数范围（目前预设的是1-6人）
-Dining_duration_range = (20,60) #用餐时间范围（目前预设的是20-60分钟）
-Vip_ratio = 0.1 #Vip顾客比例（目前预设的是10%）
-Random_seed = 325 #随机种子，固定之后可以复现相同数据，方便进行对比试验
-BASE_TIME = datetime(2024,6,1,0,0,0) #基础时间 2024-06-01 00.00.00
+#the variable that can define by yourself
+Total_groups = 100 #no of groups of customer
+created_at_range = (0,100) #customer arrival time(unit min)
+Group_size_range = (1,6) #number of people inside each group e.g 1-6 people per group
+Dining_duration_range = (20,60) #time used for dining
+Vip_ratio = 0.1 #vip ratio
+Random_seed = 325
+BASE_TIME = datetime(2024,6,1,0,0,0) #base time 2024-06-01 00.00.00
 
 def main():
     random.seed(Random_seed)
@@ -34,13 +34,12 @@ def main():
             "is_vip": 1 if is_vip else 0
         })
 
-        #按照时间排序，保证顾客按到底按顺序配列
+        #arrange in terms of time
     customer_data.sort(key=lambda x: x["arrival_time"])
 
-        #写入 input.csv 文件
+        #write in to the input.csv
     output_file = "data\\input.csv"
     with open(output_file,"w",newline="",encoding="utf-8") as f:
-        #设置表格列名
         writer = csv.DictWriter(f, fieldnames=["group_size", "arrival_time", "dining_duration", "is_vip"])
         writer.writeheader()
         writer.writerows(customer_data)
