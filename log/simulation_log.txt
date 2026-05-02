@@ -1,300 +1,300 @@
-Processing request R001 type: B, arrived at 0 minutes, waiting customers in queue: 0/inf
-Processing request R002 type: B, arrived at 0 minutes, waiting customers in queue: 0/inf
-Request R001 type: B is served at time 0 minutes, waiting customers in queue: 0/inf
-Processing request R003 type: B, arrived at 0 minutes, waiting customers in queue: 0/inf
-Request R002 type: B is served at time 0 minutes, waiting customers in queue: 0/inf
-Request R003 type: B is served at time 0 minutes, waiting customers in queue: 0/inf
-Processing request R004 type: C, arrived at 2 minutes, waiting customers in queue: 0/inf
-Request R004 type: C is served at time 2 minutes, waiting customers in queue: 0/inf
-Processing request R005 type: B, arrived at 4 minutes, waiting customers in queue: 0/inf
-Processing request R006 type: B, arrived at 5 minutes, waiting customers in queue: 1/inf
+Processing request R001 type: A, arrived at 0 minutes, waiting customers in queue: 0/inf
+Processing request R002 type: A, arrived at 0 minutes, waiting customers in queue: 0/inf
+Request R001 type: A is served at time 0 minutes, waiting customers in queue: 0/inf
+Processing request R003 type: A, arrived at 0 minutes, waiting customers in queue: 0/inf
+Request R002 type: A is served at time 0 minutes, waiting customers in queue: 0/inf
+Request R003 type: A is served at time 0 minutes, waiting customers in queue: 0/inf
+Processing request R004 type: A, arrived at 2 minutes, waiting customers in queue: 0/inf
+Request R004 type: A is served at time 2 minutes, waiting customers in queue: 0/inf
+Processing request R005 type: A, arrived at 4 minutes, waiting customers in queue: 0/inf
+Request R005 type: A is served at time 4 minutes, waiting customers in queue: 0/inf
+Processing request R006 type: A, arrived at 5 minutes, waiting customers in queue: 0/inf
 Processing request R007 type: A, arrived at 5 minutes, waiting customers in queue: 0/inf
+Request R006 type: A is served at time 5 minutes, waiting customers in queue: 0/inf
 Processing request R008 type: A, arrived at 5 minutes, waiting customers in queue: 0/inf
 Request R007 type: A is served at time 5 minutes, waiting customers in queue: 0/inf
 Request R008 type: A is served at time 5 minutes, waiting customers in queue: 0/inf
 Processing request R009 type: A, arrived at 6 minutes, waiting customers in queue: 0/inf
 Request R009 type: A is served at time 6 minutes, waiting customers in queue: 0/inf
-Processing request R010 type: C, arrived at 7 minutes, waiting customers in queue: 0/inf
-Processing request R011 type: A, arrived at 7 minutes, waiting customers in queue: 0/inf
-Request R011 type: A is served at time 7 minutes, waiting customers in queue: 0/inf
-Processing request R012 type: B, arrived at 8 minutes, waiting customers in queue: 2/inf
-Processing request R013 type: B, arrived at 8 minutes, waiting customers in queue: 3/inf
-Processing request R014 type: A, arrived at 10 minutes, waiting customers in queue: 0/inf
-Processing request R015 type: A, arrived at 10 minutes, waiting customers in queue: 0/inf
-Request R014 type: A is served at time 10 minutes, waiting customers in queue: 1/inf
-Processing request R016 type: A, arrived at 10 minutes, waiting customers in queue: 1/inf
-Processing request R017 type: B, arrived at 11 minutes, waiting customers in queue: 4/inf
-Processing request R018 type: A, arrived at 12 minutes, waiting customers in queue: 2/inf
-Processing request R019 type: A, arrived at 12 minutes, waiting customers in queue: 3/inf
-Processing request R020 type: B, arrived at 13 minutes, waiting customers in queue: 5/inf
-Processing request R021 type: B, arrived at 14 minutes, waiting customers in queue: 6/inf
-Processing request R022 type: B, arrived at 14 minutes, waiting customers in queue: 7/inf
-Processing request R023 type: B, arrived at 14 minutes, waiting customers in queue: 8/inf
-Processing request R024 type: C, arrived at 15 minutes, waiting customers in queue: 1/inf
-Processing request R025 type: B, arrived at 16 minutes, waiting customers in queue: 9/inf
-Processing request R026 type: A, arrived at 16 minutes, waiting customers in queue: 4/inf
-Processing request R027 type: B, arrived at 17 minutes, waiting customers in queue: 10/inf
-Processing request R028 type: A, arrived at 17 minutes, waiting customers in queue: 5/inf
-Processing request R029 type: B, arrived at 17 minutes, waiting customers in queue: 11/inf
-Processing request R030 type: B, arrived at 19 minutes, waiting customers in queue: 12/inf
-Processing request R031 type: A, arrived at 21 minutes, waiting customers in queue: 6/inf
-Processing request R032 type: A, arrived at 21 minutes, waiting customers in queue: 7/inf
-Processing request R033 type: B, arrived at 21 minutes, waiting customers in queue: 13/inf
-Processing request R034 type: B, arrived at 22 minutes, waiting customers in queue: 14/inf
-Processing request R035 type: A, arrived at 22 minutes, waiting customers in queue: 8/inf
-Processing request R036 type: B, arrived at 22 minutes, waiting customers in queue: 15/inf
-Processing request R037 type: A, arrived at 22 minutes, waiting customers in queue: 9/inf
-Processing request R038 type: B, arrived at 23 minutes, waiting customers in queue: 16/inf
-Processing request R039 type: A, arrived at 24 minutes, waiting customers in queue: 10/inf
-Processing request R040 type: A, arrived at 24 minutes, waiting customers in queue: 11/inf
-Processing request R041 type: C, arrived at 25 minutes, waiting customers in queue: 2/inf
-Processing request R042 type: B, arrived at 25 minutes, waiting customers in queue: 17/inf
-Processing request R043 type: A, arrived at 25 minutes, waiting customers in queue: 12/inf
-Processing request R044 type: C, arrived at 26 minutes, waiting customers in queue: 3/inf
-Processing request R045 type: A, arrived at 27 minutes, waiting customers in queue: 13/inf
-Processing request R046 type: B, arrived at 27 minutes, waiting customers in queue: 18/inf
+Processing request R010 type: A, arrived at 7 minutes, waiting customers in queue: 0/inf
+Processing request R011 type: A, arrived at 7 minutes, waiting customers in queue: 1/inf
+Processing request R012 type: A, arrived at 8 minutes, waiting customers in queue: 2/inf
+Processing request R013 type: A, arrived at 8 minutes, waiting customers in queue: 3/inf
+Processing request R014 type: A, arrived at 10 minutes, waiting customers in queue: 4/inf
+Processing request R015 type: A, arrived at 10 minutes, waiting customers in queue: 5/inf
+Processing request R016 type: A, arrived at 10 minutes, waiting customers in queue: 6/inf
+Processing request R017 type: A, arrived at 11 minutes, waiting customers in queue: 7/inf
+Processing request R018 type: A, arrived at 12 minutes, waiting customers in queue: 8/inf
+Processing request R019 type: A, arrived at 12 minutes, waiting customers in queue: 9/inf
+Processing request R020 type: A, arrived at 13 minutes, waiting customers in queue: 10/inf
+Processing request R021 type: A, arrived at 14 minutes, waiting customers in queue: 11/inf
+Processing request R022 type: A, arrived at 14 minutes, waiting customers in queue: 12/inf
+Processing request R023 type: A, arrived at 14 minutes, waiting customers in queue: 13/inf
+Processing request R024 type: A, arrived at 15 minutes, waiting customers in queue: 14/inf
+Processing request R025 type: A, arrived at 16 minutes, waiting customers in queue: 15/inf
+Processing request R026 type: A, arrived at 16 minutes, waiting customers in queue: 16/inf
+Processing request R027 type: A, arrived at 17 minutes, waiting customers in queue: 17/inf
+Processing request R028 type: A, arrived at 17 minutes, waiting customers in queue: 18/inf
+Processing request R029 type: A, arrived at 17 minutes, waiting customers in queue: 19/inf
+Processing request R030 type: A, arrived at 19 minutes, waiting customers in queue: 20/inf
+Processing request R031 type: A, arrived at 21 minutes, waiting customers in queue: 21/inf
+Processing request R032 type: A, arrived at 21 minutes, waiting customers in queue: 22/inf
+Processing request R033 type: A, arrived at 21 minutes, waiting customers in queue: 23/inf
+Processing request R034 type: A, arrived at 22 minutes, waiting customers in queue: 24/inf
+Processing request R035 type: A, arrived at 22 minutes, waiting customers in queue: 25/inf
+Processing request R036 type: A, arrived at 22 minutes, waiting customers in queue: 26/inf
+Processing request R037 type: A, arrived at 22 minutes, waiting customers in queue: 27/inf
+Processing request R038 type: A, arrived at 23 minutes, waiting customers in queue: 28/inf
+Processing request R039 type: A, arrived at 24 minutes, waiting customers in queue: 29/inf
+Processing request R040 type: A, arrived at 24 minutes, waiting customers in queue: 30/inf
+Processing request R041 type: A, arrived at 25 minutes, waiting customers in queue: 31/inf
+Processing request R042 type: A, arrived at 25 minutes, waiting customers in queue: 32/inf
+Processing request R043 type: A, arrived at 25 minutes, waiting customers in queue: 33/inf
+Processing request R044 type: A, arrived at 26 minutes, waiting customers in queue: 34/inf
+Processing request R045 type: A, arrived at 27 minutes, waiting customers in queue: 35/inf
+Processing request R046 type: A, arrived at 27 minutes, waiting customers in queue: 36/inf
 Request R009 type: A is completed at time 28 minutes
-Processing request R047 type: A, arrived at 28 minutes, waiting customers in queue: 14/inf
-Processing request R048 type: B, arrived at 28 minutes, waiting customers in queue: 19/inf
-Request R018 type: A is served at time 28 minutes, waiting customers in queue: 14/inf
-Processing request R049 type: A, arrived at 29 minutes, waiting customers in queue: 14/inf
-Processing request R050 type: B, arrived at 29 minutes, waiting customers in queue: 20/inf
-Processing request R051 type: A, arrived at 30 minutes, waiting customers in queue: 15/inf
-Processing request R052 type: A, arrived at 30 minutes, waiting customers in queue: 16/inf
-Processing request R053 type: A, arrived at 30 minutes, waiting customers in queue: 17/inf
-Processing request R054 type: B, arrived at 30 minutes, waiting customers in queue: 21/inf
-Processing request R055 type: B, arrived at 31 minutes, waiting customers in queue: 22/inf
-Request R003 type: B is completed at time 34 minutes
-Processing request R056 type: A, arrived at 34 minutes, waiting customers in queue: 18/inf
-Processing request R057 type: B, arrived at 34 minutes, waiting customers in queue: 22/inf
-Request R023 type: B is served at time 34 minutes, waiting customers in queue: 23/inf
-Processing request R058 type: B, arrived at 34 minutes, waiting customers in queue: 23/inf
-Processing request R059 type: C, arrived at 34 minutes, waiting customers in queue: 4/inf
-Processing request R060 type: B, arrived at 34 minutes, waiting customers in queue: 24/inf
-Request R004 type: C is completed at time 35 minutes
-Request R011 type: A is completed at time 35 minutes
-Processing request R061 type: B, arrived at 35 minutes, waiting customers in queue: 25/inf
-Request R010 type: C is served at time 35 minutes, waiting customers in queue: 4/inf
-Request R051 type: A is served at time 35 minutes, waiting customers in queue: 18/inf
-Processing request R062 type: A, arrived at 36 minutes, waiting customers in queue: 18/inf
-Processing request R063 type: C, arrived at 37 minutes, waiting customers in queue: 4/inf
-Request R014 type: A is completed at time 38 minutes
-Processing request R064 type: B, arrived at 38 minutes, waiting customers in queue: 26/inf
-Request R015 type: A is served at time 38 minutes, waiting customers in queue: 18/inf
-Processing request R065 type: A, arrived at 39 minutes, waiting customers in queue: 18/inf
-Processing request R066 type: A, arrived at 39 minutes, waiting customers in queue: 19/inf
-Request R001 type: B is completed at time 41 minutes
-Processing request R067 type: A, arrived at 41 minutes, waiting customers in queue: 20/inf
-Processing request R068 type: B, arrived at 41 minutes, waiting customers in queue: 26/inf
-Request R025 type: B is served at time 41 minutes, waiting customers in queue: 27/inf
-Processing request R069 type: C, arrived at 42 minutes, waiting customers in queue: 5/inf
-Processing request R070 type: A, arrived at 42 minutes, waiting customers in queue: 21/inf
-Request R002 type: B is completed at time 44 minutes
-Request R038 type: B is served at time 44 minutes, waiting customers in queue: 26/inf
-Processing request R071 type: A, arrived at 45 minutes, waiting customers in queue: 22/inf
-Processing request R072 type: B, arrived at 45 minutes, waiting customers in queue: 26/inf
-Processing request R073 type: A, arrived at 45 minutes, waiting customers in queue: 23/inf
-Processing request R074 type: B, arrived at 45 minutes, waiting customers in queue: 27/inf
+Processing request R047 type: A, arrived at 28 minutes, waiting customers in queue: 37/inf
+Processing request R048 type: A, arrived at 28 minutes, waiting customers in queue: 37/inf
+Request R010 type: A is served at time 28 minutes, waiting customers in queue: 38/inf
+Processing request R049 type: A, arrived at 29 minutes, waiting customers in queue: 38/inf
+Processing request R050 type: A, arrived at 29 minutes, waiting customers in queue: 39/inf
+Request R006 type: A is completed at time 30 minutes
+Processing request R051 type: A, arrived at 30 minutes, waiting customers in queue: 40/inf
+Processing request R052 type: A, arrived at 30 minutes, waiting customers in queue: 40/inf
+Request R014 type: A is served at time 30 minutes, waiting customers in queue: 41/inf
+Processing request R053 type: A, arrived at 30 minutes, waiting customers in queue: 41/inf
+Processing request R054 type: A, arrived at 30 minutes, waiting customers in queue: 42/inf
+Processing request R055 type: A, arrived at 31 minutes, waiting customers in queue: 43/inf
+Request R003 type: A is completed at time 34 minutes
+Processing request R056 type: A, arrived at 34 minutes, waiting customers in queue: 44/inf
+Processing request R057 type: A, arrived at 34 minutes, waiting customers in queue: 44/inf
+Request R018 type: A is served at time 34 minutes, waiting customers in queue: 45/inf
+Processing request R058 type: A, arrived at 34 minutes, waiting customers in queue: 45/inf
+Processing request R059 type: A, arrived at 34 minutes, waiting customers in queue: 46/inf
+Processing request R060 type: A, arrived at 34 minutes, waiting customers in queue: 47/inf
+Request R004 type: A is completed at time 35 minutes
+Processing request R061 type: A, arrived at 35 minutes, waiting customers in queue: 48/inf
+Request R023 type: A is served at time 35 minutes, waiting customers in queue: 48/inf
+Processing request R062 type: A, arrived at 36 minutes, waiting customers in queue: 48/inf
+Processing request R063 type: A, arrived at 37 minutes, waiting customers in queue: 49/inf
+Processing request R064 type: A, arrived at 38 minutes, waiting customers in queue: 50/inf
+Processing request R065 type: A, arrived at 39 minutes, waiting customers in queue: 51/inf
+Processing request R066 type: A, arrived at 39 minutes, waiting customers in queue: 52/inf
+Request R001 type: A is completed at time 41 minutes
+Processing request R067 type: A, arrived at 41 minutes, waiting customers in queue: 53/inf
+Processing request R068 type: A, arrived at 41 minutes, waiting customers in queue: 53/inf
+Request R025 type: A is served at time 41 minutes, waiting customers in queue: 54/inf
+Processing request R069 type: A, arrived at 42 minutes, waiting customers in queue: 54/inf
+Processing request R070 type: A, arrived at 42 minutes, waiting customers in queue: 55/inf
+Request R002 type: A is completed at time 44 minutes
+Request R038 type: A is served at time 44 minutes, waiting customers in queue: 55/inf
+Processing request R071 type: A, arrived at 45 minutes, waiting customers in queue: 55/inf
+Processing request R072 type: A, arrived at 45 minutes, waiting customers in queue: 56/inf
+Processing request R073 type: A, arrived at 45 minutes, waiting customers in queue: 57/inf
+Processing request R074 type: A, arrived at 45 minutes, waiting customers in queue: 58/inf
 Request R008 type: A is completed at time 46 minutes
-Processing request R075 type: B, arrived at 46 minutes, waiting customers in queue: 28/inf
-Processing request R076 type: B, arrived at 46 minutes, waiting customers in queue: 29/inf
-Request R071 type: A is served at time 46 minutes, waiting customers in queue: 23/inf
-Processing request R077 type: B, arrived at 47 minutes, waiting customers in queue: 30/inf
-Processing request R078 type: C, arrived at 48 minutes, waiting customers in queue: 6/inf
-Processing request R079 type: A, arrived at 48 minutes, waiting customers in queue: 23/inf
-Processing request R080 type: C, arrived at 49 minutes, waiting customers in queue: 7/inf
-Processing request R081 type: A, arrived at 50 minutes, waiting customers in queue: 24/inf
-Processing request R082 type: A, arrived at 51 minutes, waiting customers in queue: 25/inf
-Processing request R083 type: B, arrived at 51 minutes, waiting customers in queue: 31/inf
-Processing request R084 type: A, arrived at 51 minutes, waiting customers in queue: 26/inf
-Request R018 type: A is completed at time 52 minutes
-Request R081 type: A is served at time 52 minutes, waiting customers in queue: 26/inf
-Processing request R085 type: B, arrived at 53 minutes, waiting customers in queue: 32/inf
+Processing request R075 type: A, arrived at 46 minutes, waiting customers in queue: 59/inf
+Processing request R076 type: A, arrived at 46 minutes, waiting customers in queue: 59/inf
+Request R048 type: A is served at time 46 minutes, waiting customers in queue: 60/inf
+Processing request R077 type: A, arrived at 47 minutes, waiting customers in queue: 60/inf
+Processing request R078 type: A, arrived at 48 minutes, waiting customers in queue: 61/inf
+Processing request R079 type: A, arrived at 48 minutes, waiting customers in queue: 62/inf
+Processing request R080 type: A, arrived at 49 minutes, waiting customers in queue: 63/inf
+Processing request R081 type: A, arrived at 50 minutes, waiting customers in queue: 64/inf
+Processing request R082 type: A, arrived at 51 minutes, waiting customers in queue: 65/inf
+Processing request R083 type: A, arrived at 51 minutes, waiting customers in queue: 66/inf
+Processing request R084 type: A, arrived at 51 minutes, waiting customers in queue: 67/inf
+Processing request R085 type: A, arrived at 53 minutes, waiting customers in queue: 68/inf
 Request R007 type: A is completed at time 54 minutes
-Processing request R086 type: B, arrived at 54 minutes, waiting customers in queue: 33/inf
-Processing request R087 type: B, arrived at 54 minutes, waiting customers in queue: 34/inf
-Request R016 type: A is served at time 54 minutes, waiting customers in queue: 25/inf
-Processing request R088 type: B, arrived at 54 minutes, waiting customers in queue: 35/inf
-Processing request R089 type: C, arrived at 56 minutes, waiting customers in queue: 8/inf
-Processing request R090 type: A, arrived at 56 minutes, waiting customers in queue: 25/inf
-Processing request R091 type: A, arrived at 57 minutes, waiting customers in queue: 26/inf
-Processing request R092 type: A, arrived at 57 minutes, waiting customers in queue: 27/inf
-Processing request R093 type: B, arrived at 58 minutes, waiting customers in queue: 36/inf
-Processing request R094 type: A, arrived at 59 minutes, waiting customers in queue: 28/inf
-Processing request R095 type: C, arrived at 59 minutes, waiting customers in queue: 9/inf
-Processing request R096 type: A, arrived at 59 minutes, waiting customers in queue: 29/inf
-Processing request R097 type: B, arrived at 59 minutes, waiting customers in queue: 37/inf
-Request R015 type: A is completed at time 60 minutes
-Processing request R098 type: C, arrived at 60 minutes, waiting customers in queue: 10/inf
-Processing request R099 type: C, arrived at 60 minutes, waiting customers in queue: 11/inf
-Request R019 type: A is served at time 60 minutes, waiting customers in queue: 29/inf
-Processing request R100 type: B, arrived at 60 minutes, waiting customers in queue: 38/inf
-Request R023 type: B is completed at time 64 minutes
-Request R048 type: B is served at time 64 minutes, waiting customers in queue: 38/inf
-Request R051 type: A is completed at time 67 minutes
-Request R026 type: A is served at time 67 minutes, waiting customers in queue: 28/inf
-Request R081 type: A is completed at time 84 minutes
-Request R028 type: A is served at time 84 minutes, waiting customers in queue: 27/inf
-Request R016 type: A is completed at time 85 minutes
-Request R031 type: A is served at time 85 minutes, waiting customers in queue: 26/inf
-Request R038 type: B is completed at time 90 minutes
-Request R064 type: B is served at time 90 minutes, waiting customers in queue: 37/inf
-Request R025 type: B is completed at time 92 minutes
-Request R005 type: B is served at time 92 minutes, waiting customers in queue: 36/inf
-Request R010 type: C is completed at time 94 minutes
-Request R063 type: C is served at time 94 minutes, waiting customers in queue: 11/inf
-Request R026 type: A is completed at time 98 minutes
-Request R032 type: A is served at time 98 minutes, waiting customers in queue: 25/inf
-Request R071 type: A is completed at time 101 minutes
-Request R035 type: A is served at time 101 minutes, waiting customers in queue: 24/inf
-Request R019 type: A is completed at time 108 minutes
-Request R037 type: A is served at time 108 minutes, waiting customers in queue: 23/inf
-Request R048 type: B is completed at time 116 minutes
-Request R006 type: B is served at time 116 minutes, waiting customers in queue: 35/inf
-Request R063 type: C is completed at time 124 minutes
-Request R098 type: C is served at time 124 minutes, waiting customers in queue: 10/inf
-Request R064 type: B is completed at time 125 minutes
-Request R012 type: B is served at time 125 minutes, waiting customers in queue: 34/inf
-Request R028 type: A is completed at time 131 minutes
-Request R039 type: A is served at time 131 minutes, waiting customers in queue: 22/inf
-Request R031 type: A is completed at time 135 minutes
-Request R040 type: A is served at time 135 minutes, waiting customers in queue: 21/inf
-Request R035 type: A is completed at time 139 minutes
-Request R043 type: A is served at time 139 minutes, waiting customers in queue: 20/inf
-Request R006 type: B is completed at time 141 minutes
-Request R013 type: B is served at time 141 minutes, waiting customers in queue: 33/inf
-Request R032 type: A is completed at time 142 minutes
-Request R045 type: A is served at time 142 minutes, waiting customers in queue: 19/inf
-Request R005 type: B is completed at time 145 minutes
-Request R098 type: C is completed at time 145 minutes
-Request R017 type: B is served at time 145 minutes, waiting customers in queue: 32/inf
-Request R099 type: C is served at time 145 minutes, waiting customers in queue: 9/inf
-Request R037 type: A is completed at time 147 minutes
-Request R047 type: A is served at time 147 minutes, waiting customers in queue: 18/inf
-Request R099 type: C is completed at time 168 minutes
-Request R024 type: C is served at time 168 minutes, waiting customers in queue: 8/inf
-Request R043 type: A is completed at time 171 minutes
-Request R017 type: B is completed at time 171 minutes
-Request R049 type: A is served at time 171 minutes, waiting customers in queue: 17/inf
-Request R020 type: B is served at time 171 minutes, waiting customers in queue: 31/inf
-Request R045 type: A is completed at time 173 minutes
-Request R052 type: A is served at time 173 minutes, waiting customers in queue: 16/inf
-Request R013 type: B is completed at time 175 minutes
-Request R021 type: B is served at time 175 minutes, waiting customers in queue: 30/inf
-Request R012 type: B is completed at time 181 minutes
-Request R022 type: B is served at time 181 minutes, waiting customers in queue: 29/inf
-Request R047 type: A is completed at time 187 minutes
-Request R053 type: A is served at time 187 minutes, waiting customers in queue: 15/inf
-Request R039 type: A is completed at time 191 minutes
-Request R056 type: A is served at time 191 minutes, waiting customers in queue: 14/inf
-Request R040 type: A is completed at time 194 minutes
-Request R062 type: A is served at time 194 minutes, waiting customers in queue: 13/inf
-Request R024 type: C is completed at time 203 minutes
-Request R041 type: C is served at time 203 minutes, waiting customers in queue: 7/inf
-Request R056 type: A is completed at time 217 minutes
-Request R065 type: A is served at time 217 minutes, waiting customers in queue: 12/inf
-Request R021 type: B is completed at time 218 minutes
-Request R053 type: A is completed at time 218 minutes
-Request R027 type: B is served at time 218 minutes, waiting customers in queue: 28/inf
-Request R066 type: A is served at time 218 minutes, waiting customers in queue: 11/inf
-Request R052 type: A is completed at time 220 minutes
-Request R067 type: A is served at time 220 minutes, waiting customers in queue: 10/inf
-Request R049 type: A is completed at time 224 minutes
-Request R070 type: A is served at time 224 minutes, waiting customers in queue: 9/inf
-Request R020 type: B is completed at time 226 minutes
-Request R029 type: B is served at time 226 minutes, waiting customers in queue: 27/inf
-Request R022 type: B is completed at time 228 minutes
-Request R030 type: B is served at time 228 minutes, waiting customers in queue: 26/inf
-Request R041 type: C is completed at time 232 minutes
-Request R044 type: C is served at time 232 minutes, waiting customers in queue: 6/inf
-Request R062 type: A is completed at time 237 minutes
-Request R073 type: A is served at time 237 minutes, waiting customers in queue: 8/inf
-Request R067 type: A is completed at time 247 minutes
-Request R079 type: A is served at time 247 minutes, waiting customers in queue: 7/inf
-Request R066 type: A is completed at time 250 minutes
-Request R082 type: A is served at time 250 minutes, waiting customers in queue: 6/inf
-Request R065 type: A is completed at time 258 minutes
-Request R084 type: A is served at time 258 minutes, waiting customers in queue: 5/inf
-Request R027 type: B is completed at time 261 minutes
-Request R073 type: A is completed at time 261 minutes
-Request R033 type: B is served at time 261 minutes, waiting customers in queue: 25/inf
-Request R090 type: A is served at time 261 minutes, waiting customers in queue: 4/inf
-Request R029 type: B is completed at time 264 minutes
-Request R034 type: B is served at time 264 minutes, waiting customers in queue: 24/inf
-Request R030 type: B is completed at time 266 minutes
-Request R036 type: B is served at time 266 minutes, waiting customers in queue: 23/inf
-Request R070 type: A is completed at time 268 minutes
-Request R091 type: A is served at time 268 minutes, waiting customers in queue: 3/inf
-Request R084 type: A is completed at time 284 minutes
-Request R033 type: B is completed at time 284 minutes
-Request R092 type: A is served at time 284 minutes, waiting customers in queue: 2/inf
-Request R042 type: B is served at time 284 minutes, waiting customers in queue: 22/inf
-Request R044 type: C is completed at time 286 minutes
-Request R059 type: C is served at time 286 minutes, waiting customers in queue: 5/inf
-Request R079 type: A is completed at time 290 minutes
-Request R082 type: A is completed at time 290 minutes
-Request R094 type: A is served at time 290 minutes, waiting customers in queue: 0/inf
-Request R096 type: A is served at time 290 minutes, waiting customers in queue: 0/inf
-Request R091 type: A is completed at time 291 minutes
-Request R034 type: B is completed at time 296 minutes
-Request R046 type: B is served at time 296 minutes, waiting customers in queue: 21/inf
-Request R090 type: A is completed at time 299 minutes
-Request R046 type: B is completed at time 322 minutes
-Request R050 type: B is served at time 322 minutes, waiting customers in queue: 20/inf
-Request R036 type: B is completed at time 324 minutes
-Request R054 type: B is served at time 324 minutes, waiting customers in queue: 19/inf
-Request R094 type: A is completed at time 332 minutes
-Request R096 type: A is completed at time 333 minutes
-Request R092 type: A is completed at time 335 minutes
-Request R042 type: B is completed at time 337 minutes
-Request R055 type: B is served at time 337 minutes, waiting customers in queue: 18/inf
-Request R059 type: C is completed at time 345 minutes
-Request R069 type: C is served at time 345 minutes, waiting customers in queue: 4/inf
-Request R050 type: B is completed at time 353 minutes
-Request R057 type: B is served at time 353 minutes, waiting customers in queue: 17/inf
-Request R054 type: B is completed at time 356 minutes
-Request R058 type: B is served at time 356 minutes, waiting customers in queue: 16/inf
-Request R055 type: B is completed at time 359 minutes
-Request R060 type: B is served at time 359 minutes, waiting customers in queue: 15/inf
-Request R069 type: C is completed at time 369 minutes
-Request R078 type: C is served at time 369 minutes, waiting customers in queue: 3/inf
-Request R057 type: B is completed at time 379 minutes
-Request R058 type: B is completed at time 379 minutes
-Request R061 type: B is served at time 379 minutes, waiting customers in queue: 13/inf
-Request R068 type: B is served at time 379 minutes, waiting customers in queue: 13/inf
-Request R060 type: B is completed at time 388 minutes
-Request R072 type: B is served at time 388 minutes, waiting customers in queue: 12/inf
-Request R078 type: C is completed at time 401 minutes
-Request R061 type: B is completed at time 401 minutes
-Request R080 type: C is served at time 401 minutes, waiting customers in queue: 2/inf
-Request R074 type: B is served at time 401 minutes, waiting customers in queue: 11/inf
-Request R068 type: B is completed at time 406 minutes
-Request R075 type: B is served at time 406 minutes, waiting customers in queue: 10/inf
-Request R072 type: B is completed at time 412 minutes
-Request R076 type: B is served at time 412 minutes, waiting customers in queue: 9/inf
-Request R076 type: B is completed at time 436 minutes
-Request R077 type: B is served at time 436 minutes, waiting customers in queue: 8/inf
-Request R080 type: C is completed at time 437 minutes
-Request R089 type: C is served at time 437 minutes, waiting customers in queue: 1/inf
-Request R074 type: B is completed at time 441 minutes
-Request R083 type: B is served at time 441 minutes, waiting customers in queue: 7/inf
-Request R075 type: B is completed at time 460 minutes
-Request R085 type: B is served at time 460 minutes, waiting customers in queue: 6/inf
-Request R077 type: B is completed at time 484 minutes
-Request R086 type: B is served at time 484 minutes, waiting customers in queue: 5/inf
-Request R089 type: C is completed at time 487 minutes
-Request R095 type: C is served at time 487 minutes, waiting customers in queue: 0/inf
-Request R083 type: B is completed at time 496 minutes
-Request R085 type: B is completed at time 496 minutes
-Request R087 type: B is served at time 496 minutes, waiting customers in queue: 3/inf
-Request R088 type: B is served at time 496 minutes, waiting customers in queue: 3/inf
-Request R086 type: B is completed at time 516 minutes
-Request R093 type: B is served at time 516 minutes, waiting customers in queue: 2/inf
-Request R088 type: B is completed at time 522 minutes
-Request R097 type: B is served at time 522 minutes, waiting customers in queue: 1/inf
-Request R095 type: C is completed at time 532 minutes
-Request R087 type: B is completed at time 541 minutes
-Request R100 type: B is served at time 541 minutes, waiting customers in queue: 0/inf
-Request R093 type: B is completed at time 562 minutes
-Request R097 type: B is completed at time 568 minutes
-Request R100 type: B is completed at time 589 minutes
+Processing request R086 type: A, arrived at 54 minutes, waiting customers in queue: 69/inf
+Processing request R087 type: A, arrived at 54 minutes, waiting customers in queue: 69/inf
+Request R051 type: A is served at time 54 minutes, waiting customers in queue: 70/inf
+Processing request R088 type: A, arrived at 54 minutes, waiting customers in queue: 70/inf
+Processing request R089 type: A, arrived at 56 minutes, waiting customers in queue: 71/inf
+Processing request R090 type: A, arrived at 56 minutes, waiting customers in queue: 72/inf
+Request R005 type: A is completed at time 57 minutes
+Processing request R091 type: A, arrived at 57 minutes, waiting customers in queue: 73/inf
+Processing request R092 type: A, arrived at 57 minutes, waiting customers in queue: 73/inf
+Request R063 type: A is served at time 57 minutes, waiting customers in queue: 74/inf
+Request R014 type: A is completed at time 58 minutes
+Request R018 type: A is completed at time 58 minutes
+Processing request R093 type: A, arrived at 58 minutes, waiting customers in queue: 74/inf
+Request R064 type: A is served at time 58 minutes, waiting customers in queue: 73/inf
+Request R071 type: A is served at time 58 minutes, waiting customers in queue: 73/inf
+Processing request R094 type: A, arrived at 59 minutes, waiting customers in queue: 73/inf
+Processing request R095 type: A, arrived at 59 minutes, waiting customers in queue: 74/inf
+Processing request R096 type: A, arrived at 59 minutes, waiting customers in queue: 75/inf
+Processing request R097 type: A, arrived at 59 minutes, waiting customers in queue: 76/inf
+Processing request R098 type: A, arrived at 60 minutes, waiting customers in queue: 77/inf
+Processing request R099 type: A, arrived at 60 minutes, waiting customers in queue: 78/inf
+Processing request R100 type: A, arrived at 60 minutes, waiting customers in queue: 79/inf
+Request R023 type: A is completed at time 65 minutes
+Request R081 type: A is served at time 65 minutes, waiting customers in queue: 79/inf
+Request R051 type: A is completed at time 86 minutes
+Request R098 type: A is served at time 86 minutes, waiting customers in queue: 78/inf
+Request R010 type: A is completed at time 87 minutes
+Request R063 type: A is completed at time 87 minutes
+Request R099 type: A is served at time 87 minutes, waiting customers in queue: 76/inf
+Request R011 type: A is served at time 87 minutes, waiting customers in queue: 76/inf
+Request R038 type: A is completed at time 90 minutes
+Request R012 type: A is served at time 90 minutes, waiting customers in queue: 75/inf
+Request R025 type: A is completed at time 92 minutes
+Request R013 type: A is served at time 92 minutes, waiting customers in queue: 74/inf
+Request R064 type: A is completed at time 93 minutes
+Request R015 type: A is served at time 93 minutes, waiting customers in queue: 73/inf
+Request R081 type: A is completed at time 97 minutes
+Request R016 type: A is served at time 97 minutes, waiting customers in queue: 72/inf
+Request R048 type: A is completed at time 98 minutes
+Request R017 type: A is served at time 98 minutes, waiting customers in queue: 71/inf
+Request R098 type: A is completed at time 107 minutes
+Request R019 type: A is served at time 107 minutes, waiting customers in queue: 70/inf
+Request R099 type: A is completed at time 110 minutes
+Request R020 type: A is served at time 110 minutes, waiting customers in queue: 69/inf
+Request R071 type: A is completed at time 113 minutes
+Request R021 type: A is served at time 113 minutes, waiting customers in queue: 68/inf
+Request R011 type: A is completed at time 115 minutes
+Request R015 type: A is completed at time 115 minutes
+Request R022 type: A is served at time 115 minutes, waiting customers in queue: 66/inf
+Request R024 type: A is served at time 115 minutes, waiting customers in queue: 66/inf
+Request R017 type: A is completed at time 124 minutes
+Request R026 type: A is served at time 124 minutes, waiting customers in queue: 65/inf
+Request R013 type: A is completed at time 126 minutes
+Request R027 type: A is served at time 126 minutes, waiting customers in queue: 64/inf
+Request R016 type: A is completed at time 128 minutes
+Request R028 type: A is served at time 128 minutes, waiting customers in queue: 63/inf
+Request R012 type: A is completed at time 146 minutes
+Request R029 type: A is served at time 146 minutes, waiting customers in queue: 62/inf
+Request R024 type: A is completed at time 150 minutes
+Request R030 type: A is served at time 150 minutes, waiting customers in queue: 61/inf
+Request R019 type: A is completed at time 155 minutes
+Request R026 type: A is completed at time 155 minutes
+Request R031 type: A is served at time 155 minutes, waiting customers in queue: 59/inf
+Request R032 type: A is served at time 155 minutes, waiting customers in queue: 59/inf
+Request R021 type: A is completed at time 156 minutes
+Request R033 type: A is served at time 156 minutes, waiting customers in queue: 58/inf
+Request R022 type: A is completed at time 162 minutes
+Request R034 type: A is served at time 162 minutes, waiting customers in queue: 57/inf
+Request R020 type: A is completed at time 165 minutes
+Request R035 type: A is served at time 165 minutes, waiting customers in queue: 56/inf
+Request R027 type: A is completed at time 169 minutes
+Request R036 type: A is served at time 169 minutes, waiting customers in queue: 55/inf
+Request R028 type: A is completed at time 175 minutes
+Request R037 type: A is served at time 175 minutes, waiting customers in queue: 54/inf
+Request R033 type: A is completed at time 179 minutes
+Request R039 type: A is served at time 179 minutes, waiting customers in queue: 53/inf
+Request R029 type: A is completed at time 184 minutes
+Request R040 type: A is served at time 184 minutes, waiting customers in queue: 52/inf
+Request R030 type: A is completed at time 188 minutes
+Request R041 type: A is served at time 188 minutes, waiting customers in queue: 51/inf
+Request R034 type: A is completed at time 194 minutes
+Request R042 type: A is served at time 194 minutes, waiting customers in queue: 50/inf
+Request R032 type: A is completed at time 199 minutes
+Request R043 type: A is served at time 199 minutes, waiting customers in queue: 49/inf
+Request R035 type: A is completed at time 203 minutes
+Request R044 type: A is served at time 203 minutes, waiting customers in queue: 48/inf
+Request R031 type: A is completed at time 205 minutes
+Request R045 type: A is served at time 205 minutes, waiting customers in queue: 47/inf
+Request R037 type: A is completed at time 214 minutes
+Request R046 type: A is served at time 214 minutes, waiting customers in queue: 46/inf
+Request R041 type: A is completed at time 217 minutes
+Request R047 type: A is served at time 217 minutes, waiting customers in queue: 45/inf
+Request R036 type: A is completed at time 227 minutes
+Request R049 type: A is served at time 227 minutes, waiting customers in queue: 44/inf
+Request R043 type: A is completed at time 231 minutes
+Request R050 type: A is served at time 231 minutes, waiting customers in queue: 43/inf
+Request R045 type: A is completed at time 236 minutes
+Request R052 type: A is served at time 236 minutes, waiting customers in queue: 42/inf
+Request R039 type: A is completed at time 239 minutes
+Request R053 type: A is served at time 239 minutes, waiting customers in queue: 41/inf
+Request R046 type: A is completed at time 240 minutes
+Request R054 type: A is served at time 240 minutes, waiting customers in queue: 40/inf
+Request R040 type: A is completed at time 243 minutes
+Request R055 type: A is served at time 243 minutes, waiting customers in queue: 39/inf
+Request R042 type: A is completed at time 247 minutes
+Request R056 type: A is served at time 247 minutes, waiting customers in queue: 38/inf
+Request R044 type: A is completed at time 257 minutes
+Request R047 type: A is completed at time 257 minutes
+Request R057 type: A is served at time 257 minutes, waiting customers in queue: 36/inf
+Request R058 type: A is served at time 257 minutes, waiting customers in queue: 36/inf
+Request R050 type: A is completed at time 262 minutes
+Request R059 type: A is served at time 262 minutes, waiting customers in queue: 35/inf
+Request R055 type: A is completed at time 265 minutes
+Request R060 type: A is served at time 265 minutes, waiting customers in queue: 34/inf
+Request R053 type: A is completed at time 270 minutes
+Request R061 type: A is served at time 270 minutes, waiting customers in queue: 33/inf
+Request R054 type: A is completed at time 272 minutes
+Request R062 type: A is served at time 272 minutes, waiting customers in queue: 32/inf
+Request R056 type: A is completed at time 273 minutes
+Request R065 type: A is served at time 273 minutes, waiting customers in queue: 31/inf
+Request R049 type: A is completed at time 280 minutes
+Request R058 type: A is completed at time 280 minutes
+Request R066 type: A is served at time 280 minutes, waiting customers in queue: 29/inf
+Request R067 type: A is served at time 280 minutes, waiting customers in queue: 29/inf
+Request R052 type: A is completed at time 283 minutes
+Request R057 type: A is completed at time 283 minutes
+Request R068 type: A is served at time 283 minutes, waiting customers in queue: 27/inf
+Request R069 type: A is served at time 283 minutes, waiting customers in queue: 27/inf
+Request R061 type: A is completed at time 292 minutes
+Request R070 type: A is served at time 292 minutes, waiting customers in queue: 26/inf
+Request R060 type: A is completed at time 294 minutes
+Request R072 type: A is served at time 294 minutes, waiting customers in queue: 25/inf
+Request R067 type: A is completed at time 307 minutes
+Request R069 type: A is completed at time 307 minutes
+Request R073 type: A is served at time 307 minutes, waiting customers in queue: 23/inf
+Request R074 type: A is served at time 307 minutes, waiting customers in queue: 23/inf
+Request R068 type: A is completed at time 310 minutes
+Request R075 type: A is served at time 310 minutes, waiting customers in queue: 22/inf
+Request R066 type: A is completed at time 312 minutes
+Request R076 type: A is served at time 312 minutes, waiting customers in queue: 21/inf
+Request R065 type: A is completed at time 314 minutes
+Request R077 type: A is served at time 314 minutes, waiting customers in queue: 20/inf
+Request R062 type: A is completed at time 315 minutes
+Request R078 type: A is served at time 315 minutes, waiting customers in queue: 19/inf
+Request R072 type: A is completed at time 318 minutes
+Request R079 type: A is served at time 318 minutes, waiting customers in queue: 18/inf
+Request R059 type: A is completed at time 321 minutes
+Request R080 type: A is served at time 321 minutes, waiting customers in queue: 17/inf
+Request R073 type: A is completed at time 331 minutes
+Request R082 type: A is served at time 331 minutes, waiting customers in queue: 16/inf
+Request R070 type: A is completed at time 336 minutes
+Request R076 type: A is completed at time 336 minutes
+Request R083 type: A is served at time 336 minutes, waiting customers in queue: 14/inf
+Request R084 type: A is served at time 336 minutes, waiting customers in queue: 14/inf
+Request R074 type: A is completed at time 347 minutes
+Request R078 type: A is completed at time 347 minutes
+Request R085 type: A is served at time 347 minutes, waiting customers in queue: 12/inf
+Request R086 type: A is served at time 347 minutes, waiting customers in queue: 12/inf
+Request R080 type: A is completed at time 357 minutes
+Request R087 type: A is served at time 357 minutes, waiting customers in queue: 11/inf
+Request R079 type: A is completed at time 361 minutes
+Request R088 type: A is served at time 361 minutes, waiting customers in queue: 10/inf
+Request R077 type: A is completed at time 362 minutes
+Request R084 type: A is completed at time 362 minutes
+Request R089 type: A is served at time 362 minutes, waiting customers in queue: 8/inf
+Request R090 type: A is served at time 362 minutes, waiting customers in queue: 8/inf
+Request R075 type: A is completed at time 364 minutes
+Request R091 type: A is served at time 364 minutes, waiting customers in queue: 7/inf
+Request R082 type: A is completed at time 371 minutes
+Request R092 type: A is served at time 371 minutes, waiting customers in queue: 6/inf
+Request R086 type: A is completed at time 379 minutes
+Request R093 type: A is served at time 379 minutes, waiting customers in queue: 5/inf
+Request R085 type: A is completed at time 383 minutes
+Request R094 type: A is served at time 383 minutes, waiting customers in queue: 4/inf
+Request R088 type: A is completed at time 387 minutes
+Request R091 type: A is completed at time 387 minutes
+Request R095 type: A is served at time 387 minutes, waiting customers in queue: 2/inf
+Request R096 type: A is served at time 387 minutes, waiting customers in queue: 2/inf
+Request R083 type: A is completed at time 391 minutes
+Request R097 type: A is served at time 391 minutes, waiting customers in queue: 1/inf
+Request R090 type: A is completed at time 400 minutes
+Request R100 type: A is served at time 400 minutes, waiting customers in queue: 0/inf
+Request R087 type: A is completed at time 402 minutes
+Request R089 type: A is completed at time 412 minutes
+Request R092 type: A is completed at time 422 minutes
+Request R093 type: A is completed at time 425 minutes
+Request R094 type: A is completed at time 425 minutes
+Request R096 type: A is completed at time 430 minutes
+Request R095 type: A is completed at time 432 minutes
+Request R097 type: A is completed at time 437 minutes
+Request R100 type: A is completed at time 448 minutes
