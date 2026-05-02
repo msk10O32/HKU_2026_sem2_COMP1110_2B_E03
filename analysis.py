@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Restaurant Queue Simulation - Enhanced Metrics Calculator
+Restaurant Queue Simulation - Enhanced Metrics Calculator v2 (English Output)
 Usage: python compute_metrics_v2.py [result_csv_path] [--granularity GRANULARITY_CSV] [--output OUTPUT_FILE]
 """
 
@@ -102,7 +102,7 @@ def main():
     # Prepare output lines (English)
     lines = []
     lines.append("=" * 70)
-    lines.append("Restaurant Queue Simulation - Performance Metrics Report")
+    lines.append("Restaurant Queue Simulation - Enhanced Performance Metrics Report")
     lines.append("=" * 70)
     lines.append(f"Data source: {csv_path}")
     lines.append(f"Table configuration: {gran_path}")

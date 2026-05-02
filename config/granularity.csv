@@ -1,4 +1,4 @@
 type,split_point,table_capacity,queue_capacity
-A,1,5,10
-B,3,3,10
-C,5,1,10
+A,1,5,inf
+B,3,3,inf
+C,5,1,inf

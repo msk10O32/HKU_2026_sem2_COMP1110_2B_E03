@@ -1,0 +1,60 @@
+======================================================================
+Restaurant Queue Simulation - Enhanced Performance Metrics Report
+======================================================================
+Data source: data/result.csv
+Table configuration: config/granularity.csv
+Event log: log/simulation_log.txt
+
+--- Overall Statistics ---
+Total customer groups: 100
+Groups successfully served: 100
+Groups rejected (lost): 0
+Service rate: 100.0%
+
+--- Waiting Time (Served Groups Only) ---
+Average waiting time: 182.83 minutes
+Maximum waiting time: 481.00 minutes
+Median waiting time: 172.50 minutes
+
+--- Waiting Time by Group Size ---
+Group of 1: served 13 groups, avg wait 120.62 min, max wait 231.00 min
+Group of 2: served 28 groups, avg wait 105.11 min, max wait 231.00 min
+Group of 3: served 33 groups, avg wait 253.15 min, max wait 481.00 min
+Group of 4: served 12 groups, avg wait 217.50 min, max wait 442.00 min
+Group of 5: served 11 groups, avg wait 191.55 min, max wait 428.00 min
+Group of 6: served 3 groups, avg wait 233.67 min, max wait 352.00 min
+
+--- Maximum Queue Length by Table Type ---
+Table type A: max queue length = 29 groups
+Table type B: max queue length = 38 groups
+Table type C: max queue length = 11 groups
+
+--- Overall Table Utilization ---
+Total simulation duration: 589.00 minutes (9.82 hours)
+Total tables: 9 (A:5, B:3, C:1)
+Total occupied time: 3806.00 minutes
+Total available time: 5301.00 minutes
+Overall table utilization: 71.80%
+
+--- Per-Table-Type Detailed Metrics ---
+Table type A (5 table(s)):
+  Groups served: 41
+  Average wait: 110.02 minutes
+  Table utilization: 52.87%
+  Table turnover rate: 0.84 groups/table/hour
+Table type B (3 table(s)):
+  Groups served: 45
+  Average wait: 243.64 minutes
+  Table utilization: 97.28%
+  Table turnover rate: 1.53 groups/table/hour
+Table type C (1 table(s)):
+  Groups served: 14
+  Average wait: 200.57 minutes
+  Table utilization: 89.98%
+  Table turnover rate: 1.43 groups/table/hour
+
+--- Summary by Table Type ---
+Table type A: served 41 groups, avg wait 110.02 min
+Table type B: served 45 groups, avg wait 243.64 min
+Table type C: served 14 groups, avg wait 200.57 min
+======================================================================

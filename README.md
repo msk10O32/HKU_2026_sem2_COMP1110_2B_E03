@@ -21,7 +21,6 @@ including 4 options:
         An integer, this attribute means the interval of customer count of this table, up to next smallest number, for example:
             Suppose we have "A" with split point a, and "B" with split point b, a < b. 
             Then, for the customers with group size n∈[a,b), they will be assigned a table type "A", if b is the last split point, then group "B" means n∈[b,inf)
-            Any group smaller than the smallest split point will be automatically assigned to the smallest group
     (3)table_capacity
         An integer, this attribute means the amount of this kind of table that  restaurant have, if a group of customers arrives when all tables are occupied, their request will be passed to queue.
     (4)queue_capacity

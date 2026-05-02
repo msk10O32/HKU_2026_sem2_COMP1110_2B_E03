@@ -1,14 +1,5 @@
-__pycache__/
-*.pyc
-*.pyo
-
-.DS_Store
-Thumbs.db
-
-*.log
-*.tmp
-
-venv/
-data/
-log/
-idea/
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/

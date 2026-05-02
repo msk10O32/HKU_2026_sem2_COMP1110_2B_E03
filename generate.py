@@ -8,7 +8,7 @@ import os
 
 #the variable that can define by yourself
 Total_groups = 100 #no of groups of customer
-created_at_range = (0,100) #customer arrival time(unit min)
+created_at_range = (0,60) #customer arrival time(unit min)
 Group_size_range = (1,6) #number of people inside each group e.g 1-6 people per group
 Dining_duration_range = (20,60) #time used for dining
 Vip_ratio = 0.1 #vip ratio
@@ -21,7 +21,7 @@ def main():
     #generate customer raw data
     customer_data = []
     for i in range(Total_groups):
-        group_size = random.randint(*Group_size_range)
+        group_size = random.choices([1,2,3,4,5,6], weights=[10,35,25,15,10,5])[0] #Generate group size according to the preset ratio
         arrival_min = random.randint(*created_at_range)
         dining_duration = random.randint(*Dining_duration_range)
         is_vip = random.random() < Vip_ratio #Generate VIP according to the preset ratio
