@@ -19,6 +19,8 @@ def load_group():
         reader = csv.DictReader(file)
         group = []
         for row in reader:
+            row['split_point'] = int(row['split_point'])
+            row['table_capacity'] = int(row['table_capacity'])
             group.append(row)
     return group
 #create a restaurant class to simulate the restaurant operation
@@ -27,21 +29,30 @@ class Restaurant:
         #initialize the restaurant with table groups and queue sizes
         self.queue_sizes = dict()
         self.table_groups = dict()
+        self.env = env
         for group in groups:
-            #create a priority resource for each table group, VIP customers have higher priority
-            self.table_groups[group["type"]] = simpy.PriorityResource(env, capacity=int(group["table_capacity"]))
+            #if the table capacity for a group is 0, it means that this group does not have any tables, so we create a priority resource with capacity 1 to manage the queue for this group, and immediately request it to block any requests for this group
+            if group["table_capacity"] == 0:
+                self.table_groups[group["type"]] = simpy.PriorityResource(env, capacity=1)
+                self.env.process(self.block(group["type"]))
+            else:
+                #create a priority resource for each table group, VIP customers have higher priority
+                self.table_groups[group["type"]] = simpy.PriorityResource(env, capacity=int(group["table_capacity"]))
             #manage the queue size for each table group, if the queue capacity is 'inf', set it to infinity, otherwise set it to the specified integer value
             if group["queue_capacity"] == 'inf':
                 self.queue_sizes[group["type"]] = float('inf')
             else:
                 self.queue_sizes[group["type"]] = int(group["queue_capacity"])
         #other attributes to manage the simulation
-        self.env = env
         self.requests = requests
         self.records = []
         self.log = []
         self.standard_time = dt.datetime.strptime(self.requests[0]['arrival_time'], '%Y-%m-%d %H:%M:%S')
         self.end_time = 14400
+    def block(self,table_type):
+        with self.table_groups[table_type].request(priority=0) as req:
+            yield req
+            yield self.env.event()
     def run(self):
         #trigger function for the whole simulation process
         self.env.process(self.process())

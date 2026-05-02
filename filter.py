@@ -46,7 +46,7 @@ def is_valid_input(row):
 def main():
     print("Initializing the filter module...")
     #initialize the csv file with the granularity levels
-    with open(os.path.join('config', 'granularity.csv'), 'r') as file:
+    with open('config/granularity.csv', 'r') as file:
         reader = csv.DictReader(file)
         granularity_levels = []
         #remove duplicate split_point points and check for invalid values, then sort the granularity levels based on the split_point points
@@ -58,7 +58,7 @@ def main():
                 check_split.add(int(row['split_point']))
         granularity_levels.sort(key=lambda x: x[1])
     #convert input values to the request dicts
-    with open(os.path.join('data', 'input.csv'), 'r') as file:
+    with open('data/input.csv', 'r') as file:
         reader = csv.DictReader(file)
         output = []
         for row in reader:
@@ -70,20 +70,22 @@ def main():
                 buffer['arrival_time'] = row['arrival_time']
                 buffer['is_vip'] = int(row['is_vip'])
             #if the custom count is greater than or equal to the largest split_point, assign the largest table type
-            if int(row['group_size']) >= granularity_levels[-1][1]:
+            group_size = int(row['group_size'])
+            if group_size >= granularity_levels[-1][1]:
                 buffer['table_type'] = granularity_levels[-1][0]
-            elif int(row['group_size']) < granularity_levels[0][1]:
+            elif group_size < granularity_levels[0][1]:
                 buffer['table_type'] = granularity_levels[0][0]
             else:
                 for level in range(len(granularity_levels)-1):
-                    if int(row['group_size']) in range(granularity_levels[level][1], granularity_levels[level+1][1]):
+                    if group_size in range(granularity_levels[level][1], granularity_levels[level+1][1]):
                         buffer['table_type'] = granularity_levels[level][0]
                         break
             output.append(buffer)
         output.sort(key=lambda x: x['arrival_time'])
 
         #output the request dicts to a csv file with assigned uid, in case some or the requests are missing
-        with open(os.path.join('data', 'request.csv'),'w',newline='') as file:
+        os.makedirs('data', exist_ok=True)
+        with open(os.path.join('data', 'request.csv'), 'w', newline='') as file:
             i = 0
             size = len(str(len(output)))
             fieldnames = ['uid','group_size', 'arrival_time', 'dining_duration', 'table_type', 'is_vip']
