@@ -71,6 +71,8 @@ def main():
             #if the custom count is greater than or equal to the largest split_point, assign the largest table type
             if int(row['group_size']) >= granularity_levels[-1][1]:
                 buffer['table_type'] = granularity_levels[-1][0]
+            elif int(row['group_size']) < granularity_levels[0][1]:
+                buffer['table_type'] = granularity_levels[0][0]
             else:
                 for level in range(len(granularity_levels)-1):
                     if int(row['group_size']) in range(granularity_levels[level][1], granularity_levels[level+1][1]):
