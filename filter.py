@@ -1,5 +1,6 @@
 import csv
 import datetime as dt
+import os
 '''this file aims to read the input values from the input.csv file,
 filter the input values based on the defined rules, 
 determine the table type based on the granularity levels defined in the granularity.csv file, 
@@ -45,7 +46,7 @@ def is_valid_input(row):
 def main():
     print("Initializing the filter module...")
     #initialize the csv file with the granularity levels
-    with open('config\\granularity.csv', 'r') as file:
+    with open(os.path.join('config', 'granularity.csv'), 'r') as file:
         reader = csv.DictReader(file)
         granularity_levels = []
         #remove duplicate split_point points and check for invalid values, then sort the granularity levels based on the split_point points
@@ -57,7 +58,7 @@ def main():
                 check_split.add(int(row['split_point']))
         granularity_levels.sort(key=lambda x: x[1])
     #convert input values to the request dicts
-    with open('data\\input.csv', 'r') as file:
+    with open(os.path.join('data', 'input.csv'), 'r') as file:
         reader = csv.DictReader(file)
         output = []
         for row in reader:
@@ -82,7 +83,7 @@ def main():
         output.sort(key=lambda x: x['arrival_time'])
 
         #output the request dicts to a csv file with assigned uid, in case some or the requests are missing
-        with open('data\\request.csv','w',newline='') as file:
+        with open(os.path.join('data', 'request.csv'),'w',newline='') as file:
             i = 0
             size = len(str(len(output)))
             fieldnames = ['uid','group_size', 'arrival_time', 'dining_duration', 'table_type', 'is_vip']

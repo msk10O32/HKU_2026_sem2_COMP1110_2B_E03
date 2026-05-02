@@ -1,16 +1,21 @@
 import simpy
 import csv
 import datetime as dt
+import os
 #load request and group data from csv files
 def load_request():
-    with open("data\\request.csv","r") as file:
+    with open(os.path.join("data", "request.csv"), "r") as file:
         reader = csv.DictReader(file)
         request = []
         for row in reader:
+            row['group_size'] = int(row['group_size'])
+            row['is_vip'] = int(row['is_vip'])
             request.append(row)
+        if len(request) == 0:
+            raise ValueError("No request data found in request.csv")
     return request
 def load_group():
-    with open("config\\granularity.csv","r") as file:
+    with open(os.path.join("config", "granularity.csv"), "r") as file:
         reader = csv.DictReader(file)
         group = []
         for row in reader:
@@ -73,7 +78,7 @@ class Restaurant:
             self.log.append(f"Request {request['uid']} type: {request['table_type']} is rejected due to full queue at time {self.env.now} minutes, customers limit: {self.queue_sizes[request['table_type']]}")
             return
         #else, request a table resource based on the requested table type, and log the seating time and waiting customers in queue
-        with self.table_groups[request['table_type']].request(priority=-int(request['is_vip'])) as req:
+        with self.table_groups[request['table_type']].request(priority=-request['is_vip']) as req:
             yield req
             seating_time = self.env.now
             self.log.append(f"Request {request['uid']} type: {request['table_type']} is served at time {seating_time} minutes, waiting customers in queue: {len(self.table_groups[request['table_type']].queue)}/{self.queue_sizes[request['table_type']]}")
@@ -101,13 +106,14 @@ def main():
     #run the simulation
     R.run()
     #write the results to a csv file and the logs to a text file
-    with open('data\\result.csv','w',newline='') as file:
+    with open(os.path.join('data', 'result.csv'),'w',newline='') as file:
         fieldnames = ['uid','group_size','table_type','is_vip','arrival_time','seating_time','leaving_time','is_served']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for record in R.records:
             writer.writerow(record)
-    with open('log\\simulation_log.txt','w') as file:
+    os.makedirs("log", exist_ok=True)
+    with open(os.path.join("log", "simulation_log.txt"), 'w') as file:
         for log in R.log:
             file.write(log+'\n')
 if __name__ == "__main__":

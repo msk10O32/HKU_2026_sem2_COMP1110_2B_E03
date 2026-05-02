@@ -4,6 +4,7 @@
 import random
 import csv
 from datetime import datetime,timedelta
+import os
 
 #the variable that can define by yourself
 Total_groups = 100 #no of groups of customer
@@ -38,7 +39,8 @@ def main():
     customer_data.sort(key=lambda x: x["arrival_time"])
 
         #write in to the input.csv
-    output_file = "data\\input.csv"
+    os.makedirs('data', exist_ok=True)
+    output_file = os.path.join("data", "input.csv")
     with open(output_file,"w",newline="",encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["group_size", "arrival_time", "dining_duration", "is_vip"])
         writer.writeheader()
